@@ -7,7 +7,8 @@
 - 티셔츠 묶음 수는 올림 나눗셈, 펜은 P로 나눈 몫, 나머지 
 
 ## 3. 제출 코드
-'''N = int(input())
+'''python
+N = int(input())
 sizes = list(map(int, input().split()))
 T, P = map(int, input().split())
 
@@ -24,7 +25,8 @@ print(N // P, N % P)
 - 올릿 나눗셈 코드 간단하게 수정, 변수 이름 명료화
 
 ## 5. 재작성 코드
-'''N = int(input())
+'''python
+N = int(input())
 sizes = list(map(int, input().split()))
 T, P = map(int, input().split())
 
