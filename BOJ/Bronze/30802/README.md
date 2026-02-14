@@ -17,7 +17,8 @@ for size in sizes :
     num += size // T
   else : num += size // T + 1
 print(num)
-print(N // P, N % P)'''
+print(N // P, N % P)
+'''
 
 ## 4. 개선 포인트
 - 올릿 나눗셈 코드 간단하게 수정, 변수 이름 명료화
@@ -29,7 +30,8 @@ T, P = map(int, input().split())
 
 shirt_packages = sum((s + T - 1) // T for s in sizes)
 print(shirt_packages)
-print(N // P, N % P)'''
+print(N // P, N % P)
+'''
 
 ## 6. 배운점
 - 기초 연산 간단화 하기, 제네레이터 활용, 변수 이름 명료화
