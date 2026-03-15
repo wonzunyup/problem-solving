@@ -5,27 +5,16 @@ T = int(input())
 out = []
 for _ in range(T):
     string = input().rstrip()
-    if string == ".":
-        break
+    
     stack = []
-
     for ch in string:
-        if ch in "([":
+        if ch == "(":
             stack.append(ch)
-        elif ch == "]":
-            if not stack or stack.pop() != "[":
+        else :
+            if not stack:
                 out.append("NO")
                 break
-        elif ch == ")":
-            if not stack or stack.pop() != "(":
-                out.append("NO")
-                break
-        else:
-            continue
     else:
-        if stack:
-            out.append("NO")
-        else:
-            out.append("YES")
+        out.append("YES" if not stack else "NO")
 
 sys.stdout.write("\n".join(out))
