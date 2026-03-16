@@ -1,17 +1,17 @@
 import sys
-input = sys.stdin.readline
-
 from collections import deque
+
+input = sys.stdin.readline
 
 N = int(input())
 q = deque()
-
 out = []
+
 for _ in range(N):
     command = input().split()
+
     if command[0] == "push":
-        value = command[1]
-        q.append(value)
+        q.append(command[1])
     elif command[0] == "pop":
         out.append(q.popleft() if q else "-1")
     elif command[0] == "size":
@@ -21,6 +21,6 @@ for _ in range(N):
     elif command[0] == "front":
         out.append(q[0] if q else "-1")
     elif command[0] == "back":
-        out.append(str(q[len(q) - 1]) if q else "-1")
+        out.append(q[-1] if q else "-1")
 
 sys.stdout.write("\n".join(out))
