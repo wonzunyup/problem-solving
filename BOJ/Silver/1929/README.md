@@ -35,3 +35,4 @@ sys.stdout.write("\n".join(map(str, primes)))
 
 ## 7. 풀이기록 
 - 1차 풀이 : 2026-03-24
+- 2차 풀이 : 2026-03-30
