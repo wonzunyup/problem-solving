@@ -4,7 +4,7 @@ input = sys.stdin.readline
 
 N, M = map(int, input().split())
 ns = set(input().rstrip() for _ in range(N))
-ms = set(input().rstrip() for _ in range(N))
+ms = set(input().rstrip() for _ in range(M))
 
 out = []
 for person in ns:
