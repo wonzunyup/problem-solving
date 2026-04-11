@@ -58,3 +58,4 @@ sys.stdout.write("\n".join(str(dp[n]) for n in nums))
 
 ## 7. 풀이기록 
 - 1차 풀이 : 2026-04-08
+- 2차 풀이 : 2026-04-11
