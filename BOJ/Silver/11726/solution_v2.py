@@ -3,7 +3,7 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
-dp = [0] * (max(2, n + 1))
+dp = [0] * (max(2, n) + 1)
 dp[1] = 1
 dp[2] = 2
 
