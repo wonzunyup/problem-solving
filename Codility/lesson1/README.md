@@ -10,9 +10,6 @@
 
 ## 3. 제출 코드
 ```python
-# you can write to stdout for debugging purposes, e.g.
-# print("this is a debug message")
-
 def solution(N):
     max_gap = 0
     binary = ""
